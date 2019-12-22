@@ -19,53 +19,44 @@ public class Runner extends Thread {
 
             System.out.println(runnable1.getName() + " берет палочку");
             System.out.println(runnable1.getName() + " бежит к " + runnable2.getName());
-            runnable1.start();
-            runnable1.sleep(5000);
+            sleep(3000);
 
             System.out.println(runnable2.getName() + " берет палочку");
             System.out.println(runnable2.getName() + " бежит к " + runnable3.getName());
-            runnable2.start();
-            runnable2.sleep(5000);
+            sleep(3000);
 
             System.out.println(runnable3.getName() + " берет палочку");
             System.out.println(runnable3.getName() + " бежит к " + runnable4.getName());
-            runnable3.start();
-            runnable3.sleep(5000);
+            sleep(3000);
 
             System.out.println(runnable4.getName() + " берет палочку");
             System.out.println(runnable4.getName() + " бежит к " + runnable5.getName());
-            runnable4.start();
-            runnable4.sleep(5000);
+            sleep(3000);
 
             System.out.println(runnable5.getName() + " берет палочку");
             System.out.println(runnable5.getName() + " бежит к финишу");
-            runnable5.start();
-            runnable5.sleep(5000);
-
+            sleep(3000);
 
             System.out.println(runnable5.getName() + " бежит к " + runnable4.getName());
-            runnable4.sleep(5000);
+            sleep(3000);
 
             System.out.println(runnable4.getName() + " берет палочку");
             System.out.println(runnable4.getName() + " бежит к " + runnable3.getName());
-            runnable3.sleep(5000);
+            sleep(3000);
 
             System.out.println(runnable3.getName() + " берет палочку");
             System.out.println(runnable3.getName() + " бежит к " + runnable2.getName());
-            runnable3.sleep(5000);
-
+            sleep(3000);
 
             System.out.println(runnable2.getName() + " берет палочку");
             System.out.println(runnable2.getName() + " бежит к " + runnable1.getName());
-            runnable2.sleep(5000);
-
+            sleep(3000);
 
             System.out.println(runnable1.getName() + " берет палочку");
-            runnable1.sleep(5000);
-
+            sleep(3000);
 
         } catch (Exception e) {
+            e.printStackTrace();
         }
-
     }
 }
